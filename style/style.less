@@ -1,0 +1,261 @@
+@colorText: #a276ff;
+@fontOswald: "Oswald", san-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.6rem; //16px
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    width: 100vw;
+    
+    background-image: url(./img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.body-bg {
+    display: flex;
+    background-color: #1b1d3cb2;
+}
+.main-header {
+    background-color: #0000007e;
+    display: inline-flex; /* занимает всю ширину и высоту тега header */ //pfvtyf inline-block
+    padding-left: 93px;
+    padding-right: 154px;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    margin: 50px 0 0 0; //отступ сверху был 80рх
+    color: #ffffff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family:@fontOswald;
+    font-weight: 700;
+          &_text {
+            color:@colorText;
+                  }
+        }
+/* .logo_text {
+    
+} */
+.block-nav {
+    margin-top: 47px;
+    //margin-left: 139px;
+
+}
+.nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.nav-item {
+    font-family: @fontOswald;
+    //font-weight: 400;
+}
+.nav-item__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 94px;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    
+    &:hover{
+        color:@colorText;
+    }
+}
+.block-support {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    font-family:@fontOswald;
+    text-transform: uppercase;
+    font-size: 17px;
+    
+    .support {
+        margin-bottom: 47px;
+    }
+        .support__link {
+            text-decoration: none;
+            color: #ffffff;
+            transition: all 0.3s ease-in-out;
+            line-height: 47px;
+            &:hover{
+                color:@colorText;
+            }
+        }
+// .contact {    margin-bottom: 47px;}
+/* .contact__link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    line-height: 47px;
+    &:hover{
+        color:@colorText;
+    } */
+        .acme {
+            //line-height: 70px;
+            text-decoration: none;
+            color: rgba(128, 128, 128, 0.458);
+            
+        
+        }
+}
+
+.sabyr-main {}
+
+.social {
+    margin-left: 1000px;
+    display:inline-block;
+    width: 170px;
+    height: 50px;
+    border: 5px solid @colorText;
+    background: @colorText;
+    border-radius: 0 0 10px 10px;
+    display: flex; //выравнивание внутри блока
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 200px;
+    margin-left: 207px;
+}
+.main-title {
+    font-family: @fontOswald;
+    font-weight: 700;
+    font-size: 56px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+    width: 50%;
+    span{
+        font-size: 120px;
+        color: @colorText;
+        letter-spacing: 0px;
+
+    }
+
+}
+.main-description {
+    margin-top: 42px;
+    //text-align: left;
+    font-size: 18px;
+    //font-family: 'Roboto';
+    margin-bottom: 30px;
+
+}
+.btn {
+    background-color: transparent;
+    border-radius: 17px;
+    border: 2px solid #ffffff;
+    padding: 20px 60px;
+    
+}
+
+.main-btn {
+text-decoration: none;
+font-size: 20px;
+color: #ffffff;
+width: 30%;
+text-align: center;
+//изменение цвета после курсора
+transition: all 0.3s ease-in-out;
+        &:hover{
+        color:@colorText;
+    }
+}
+.block-image {
+    margin-top: 80px;
+    margin-left: 0px;
+    //display: flex;
+//justify-content: space-around;
+
+    
+.image{
+    width: 180px;
+    height: auto;
+    margin-right: 79px;
+    transition: all 0.3s ease-in-out;
+ //justify-content: space-around;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+        &:hover{
+        outline: 6px solid @colorText;
+        outline-offset: -5px;
+  
+    }
+}
+}
+.block-news {
+    margin-top: 90px;
+    //margin-bottom: 10px;
+
+.news {
+    font-family: @fontOswald;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: bold;
+    color: #ffffff;
+}
+    //треугольник - это кусок бордюра квадрата. 
+    //видимая часть  - это основание (верх или низ или бок),
+    //все остальное - это прозрачные бордюры
+       /* Направленный вниз */
+    span { 
+    	display: inline-block;
+	    border-top: 30px solid @colorText;
+        border-left: 15px solid transparent;
+	    border-right: 15px solid transparent;
+        border-bottom: 0px solid transparent;
+	    position: relative;
+        }
+        span:after {
+	        content: '';
+	        display: inline-block;
+	        position: absolute;
+	        top: -27px; //смещение вверх\вниз чем меньше -24..-27 значение, тем выше край
+	        left: -10px; //аналогично по горизонтали
+	        border: 20px solid #1b1d3c; //
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 8px solid transparent;
+           }
+}
+.bottom-text {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-size: 16px;
+
+}
+
+
+
+
+/*    width: 0;
+height: 0;
+border-style: solid;
+border-width: 200px 100px 0 100px;
+border-color: #7a1462 transparent transparent transparent; */
