@@ -3,11 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* 
-font-family: 'Montserrat', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Roboto', sans-serif;
-*/
 html {
   font-size: 10px;
 }
@@ -29,8 +24,8 @@ body {
   background-color: #0000007e;
   display: inline-flex;
   /* занимает всю ширину и высоту тега header */
-  padding-left: 93px;
-  padding-right: 154px;
+  padding-left: 80px;
+  padding-right: 140px;
   flex-direction: column;
   align-items: center;
 }
@@ -45,9 +40,6 @@ body {
 .logo_text {
   color: #a276ff;
 }
-/* .logo_text {
-    
-} */
 .block-nav {
   margin-top: 47px;
 }
@@ -81,14 +73,6 @@ body {
   font-family: "Oswald", san-serif;
   text-transform: uppercase;
   font-size: 17px;
-  /* .contact__link {
-    color: #ffffff;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    line-height: 47px;
-    &:hover{
-        color:@colorText;
-    } */
 }
 .block-support .support {
   margin-bottom: 47px;
@@ -107,7 +91,7 @@ body {
   color: rgba(128, 128, 128, 0.458);
 }
 .social {
-  margin-left: 1000px;
+  margin-left: 70%;
   display: inline-block;
   width: 170px;
   height: 50px;
@@ -168,7 +152,7 @@ body {
 .block-image .image {
   width: 180px;
   height: auto;
-  margin-right: 79px;
+  margin-right: 5%;
   transition: all 0.3s ease-in-out;
   border: 5px solid #ffffff;
   border-radius: 10px;
@@ -213,8 +197,66 @@ body {
   margin-bottom: 100px;
   font-size: 16px;
 }
-/*    width: 0;
-height: 0;
-border-style: solid;
-border-width: 200px 100px 0 100px;
-border-color: #7a1462 transparent transparent transparent; */
+.main-block-2 {
+  display: flex;
+  justify-content: start;
+  display: inline-block;
+  margin-left: 207px;
+  width: 1150px;
+  height: 130vh;
+  background: #e0e0e1;
+  border-radius: 50px 50px 0 0;
+}
+.main-block-2 .text-block {
+  display: inline-block;
+  font-family: 'Roboto', serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+  margin-top: 100;
+  margin-left: 56px;
+  width: 500px;
+  background: transparent;
+}
+.main-block-2 .main-title-2 {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-family: "Oswald", san-serif;
+  font-weight: bolder;
+  font-size: 56px;
+  color: #000000;
+  text-transform: uppercase;
+  width: 100%;
+}
+.main-block-2 .ab1 {
+  font-weight: bolder;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-stretch: ultra-condensed;
+}
+.main-block-2 .ab2 {
+  font-stretch: ultra-condensed;
+  margin-top: 30px;
+}
+.main-block-2 .img-block {
+  display: inline-block;
+  color: #000000;
+  margin-top: 0px;
+  margin-left: 50px;
+  width: 500px;
+  border: 0px solid #000000;
+  background: transparent;
+}
+.main-block-2 .img2 {
+  width: 400px;
+  height: auto;
+  box-shadow: 0 0 10px 10px #00000042;
+  border: 6px solid #ffffff;
+  border-radius: 20px;
+}
+@media (max-width: 830px) {
+  .main-header {
+    padding-left: 32px;
+    padding-right: 60px;
+  }
+}
